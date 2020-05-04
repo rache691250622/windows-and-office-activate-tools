@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>279</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>279</width>
+    <height>222</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>279</width>
+    <height>222</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>kms激活工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>281</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>281</width>
+      <height>371</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="windows_activate">
+     <attribute name="title">
+      <string>Windows激活</string>
+     </attribute>
+     <widget class="QPushButton" name="windows_go">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Activate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="windows_key">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>key:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="windows_key_input">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>可自行输入key</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="windows_ver">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="maxVisibleItems">
+       <number>3</number>
+      </property>
+      <property name="duplicatesEnabled">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>Windows 10</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Windows 8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Windows 7</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="windows">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Windows：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="windows_server_input">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>可自行输入服务器地址</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="windows_server">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>server:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="office_activate">
+     <attribute name="title">
+      <string>Office激活</string>
+     </attribute>
+     <widget class="QComboBox" name="office_ver">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="maxVisibleItems">
+       <number>12</number>
+      </property>
+      <property name="duplicatesEnabled">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>Office 专业增强版 2019</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Office 专业增强版 2016</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Office 专业增强版 2013</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Office 标准版 2019</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Office 标准版 2016</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Office 标准版 2013</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Visio 专业版 2019</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Visio 标准版 2019</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Visio 专业版 2016</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Visio 标准版 2019</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Visio 专业版 2013</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Visio 标准版 2013</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="office">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Office：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="office_key_input">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>可自行输入key</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="office_go">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Activate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="office_key">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>key:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="office_server_input">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>可自行输入服务器地址</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="office_server">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>server:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
